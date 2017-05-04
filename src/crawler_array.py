@@ -1,6 +1,4 @@
-# 名稱:		crawler_array
-# 開發者:	kimi_tsai@2017/03/14
-# 說明:		支援多關鍵字爬圖
+#支援多關鍵字爬圖
 
 import icrawler_image
 import threading

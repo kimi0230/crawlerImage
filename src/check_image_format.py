@@ -1,11 +1,5 @@
-# 名稱:		walk
-# 開發者:	kimi_tsai@2017/03/14
-# 說明:		移除非圖片格式之檔案
+#移除非圖片格式之檔案
 import os
-
-def main():
-	fileDir = "D:\\python\\crawler_th\\木瓜_20170303_17_00_15"
-	check_extension(fileDir)
 				
 def check_extension(dirPath):
 	fileDir = dirPath
@@ -39,9 +33,8 @@ def check_extension(dirPath):
 				continue
 
 if __name__ == '__main__':
-	nowDirectory = os.getcwd() #印出目前工作目錄
+	nowDirectory = os.getcwd()
 	for tops, dirs, files in os.walk(nowDirectory):
 		for dir in dirs:
 			check_extension(os.path.join(tops,dir))
-	# main()
 

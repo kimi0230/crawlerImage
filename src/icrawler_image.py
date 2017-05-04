@@ -1,6 +1,4 @@
-# 名稱:		icrawler_image
-# 開發者:	kimi_tsai@2017/03/14
-# 說明:		google, bing, baidu 爬圖
+#google, bing, baidu 爬圖
 
 import os
 import time
