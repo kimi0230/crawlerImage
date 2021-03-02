@@ -18,7 +18,7 @@ def getImg(keyword="5566", dirpath="", imgNum=10):
 	print("keyword:" + keyword +", images:"+ str(imgNum) +"\n\n")
 
 	google_crawler = GoogleImageCrawler(parser_threads=2, downloader_threads=4, storage={'root_dir': dirpath})
-	google_crawler.crawl(keyword=keyword, offset=0, max_num=imgNum,date_min=None, date_max=None, min_size=(200, 200), max_size=None)
+	google_crawler.crawl(keyword=keyword, offset=0, max_num=imgNum, min_size=(200, 200), max_size=None)
 
 	bing_crawler = BingImageCrawler(downloader_threads=4, storage={'root_dir': dirpath})
 	bing_crawler.crawl(keyword=keyword, offset=0, max_num=imgNum, min_size=None, max_size=None)
